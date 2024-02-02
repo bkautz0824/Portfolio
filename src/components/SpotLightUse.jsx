@@ -1,6 +1,6 @@
 "use client"
 
-import { SpotlightCard } from "@/components/UI/SpotlightCard"
+import { SpotlightCard } from "@/components/ui/SpotlightCard"
 import { MagneticText } from "@/components/ui/MagneticText"
 import Image from "next/image"
 import Bennett from '../../public/images/bennett.jpg'
