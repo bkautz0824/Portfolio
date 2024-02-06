@@ -17,7 +17,7 @@ import Link from 'next/link';
 
 export default function ProjectItem1() {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px] hover:shadow-teal-500">
     <CardHeader>
       <CardTitle>Gym Guardian</CardTitle>
       <CardDescription className="text-xs">Next.js v14 for fitness tracking, MongoDB for secure data storage, Shadcn-ui with Tailwind CSS for a sleek UI, and Next Auth Provider for seamless authentication with Google API.</CardDescription>

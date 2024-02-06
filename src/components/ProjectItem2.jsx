@@ -18,7 +18,7 @@ import Link from 'next/link';
 
 export default function ProjectItem1() {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px] hover:shadow-teal-500">
     <CardHeader>
       <CardTitle>Redux Blog</CardTitle>
       <CardDescription className="text-xs">Effortlessly create and edit blogs with our full-stack React-Redux blog builder, utilizing TypeScript, Node.js, and MongoDB for a solid foundation.</CardDescription>
