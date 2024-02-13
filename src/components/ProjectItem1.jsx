@@ -24,7 +24,7 @@ export default function ProjectItem1() {
     </CardHeader>
     <CardContent>
   
-    <Link href="https://www.gym-guardian.xyz/builder" target="_blank" passHref >
+    <Link href="https://www.gym-guardian.xyz/" target="_blank" passHref >
 
       <Image
         src={"/images/gym-guardian.png"}

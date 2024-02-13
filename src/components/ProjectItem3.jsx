@@ -24,7 +24,7 @@ export default function ProjectItem1() {
     </CardHeader>
     <CardContent>
   
-    <Link href="https://www.bennetts-blog-builder.site/" target="_blank" passHref >
+    <Link href="https://www.imdb-nyc.xyz/" target="_blank" passHref >
 
       <Image
         src={"/images/imdb.png"}
