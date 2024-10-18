@@ -5,19 +5,23 @@ import clsx from "clsx"
 import { Navigation } from "@/components/ui/Navigation"
 
 export default function NavBar() {
-  const items = ["About", "Projects",]
+  const items = ["About", "Resume", "Projects"]
 
-  function navigate(id) {
-    const element = document.getElementById(id)
-    element.scrollIntoView({
-      behavior: 'smooth'
-    })
+  function navigate(item) {
+    const element = document.getElementById(item);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center', // Centers the element vertically
+        inline: 'nearest', // Optional: centers horizontally if needed
+      });
+    }
     // the callback is fired once the animation is completed
     // to allow smooth transition
   }
 
   return (
-    <div className="fixed flex items-center">
+    <div className="fixed z-50 flex items-center">
       <Navigation as="nav" fluid duration={350} className="relative p-4 mx-auto bg-black rounded-2xl">
         {({ ready, size, position, duration }) => (
           <div className="relative">
@@ -35,17 +39,20 @@ export default function NavBar() {
 
             <Navigation.List as="ul" className="relative flex items-center gap-3">
               {items.map((item, index) => (
-                <Navigation.Item key={index} as="li" onActivated={() => navigate(item)}>
+                <Navigation.Item key={index} as="li">
                   {({ setActive, isActive }) => (
-                    <a
-                      onClick={setActive}
-                      href="#"
+                    <button
+                      onClick={() => {
+                        setActive();
+                        navigate(item);
+                      }}
                       className={clsx(
                         isActive ? "text-white" : "text-white/60 hover:text-white",
                         "inline-block px-4 py-1 text-sm transition",
-                      )}>
+                      )}
+                    >
                       {item}
-                    </a>
+                    </button>
                   )}
                 </Navigation.Item>
               ))}
@@ -54,5 +61,6 @@ export default function NavBar() {
         )}
       </Navigation>
     </div>
+
   )
 }

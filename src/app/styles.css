@@ -1,0 +1,106 @@
+/* Black and White Fancy Button */
+
+.fancy-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: #ffffff solid 0.15em;
+    /* White border */
+    border-radius: 0.25em;
+    color: #ffffff;
+    /* White text */
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+}
+
+.fancy-button p {
+    z-index: 1;
+}
+
+.fancy-button:hover {
+    color: #000000;
+    /* Black text on hover */
+}
+
+.fancy-button:active {
+    border-color: #888888;
+    /* Dark gray border on active */
+}
+
+.fancy-button::after,
+.fancy-button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.5);
+    /* White with 50% opacity */
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+}
+
+.fancy-button::before {
+    left: 0;
+    transform: translateX(-8em);
+}
+
+.fancy-button::after {
+    right: 0;
+    transform: translateX(8em);
+}
+
+.fancy-button:hover::before {
+    transform: translateX(-1em);
+}
+
+.fancy-button:hover::after {
+    transform: translateX(1em);
+}
+
+.fancy-button:active::before,
+.fancy-button:active::after {
+    background: #888888;
+    /* Dark gray on active */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .fancy-button {
+        padding: 0.4em 1.2em;
+        /* Reduced padding */
+        font-size: 1.2em;
+        /* Smaller font size */
+    }
+
+    .fancy-button::after,
+    .fancy-button::before {
+        width: 7em;
+        /* Smaller circles */
+    }
+
+    .fancy-button::before {
+        transform: translateX(-6em);
+        /* Adjusted initial position */
+    }
+
+    .fancy-button::after {
+        transform: translateX(6em);
+        /* Adjusted initial position */
+    }
+
+    .fancy-button:hover::before {
+        transform: translateX(-0.5em);
+        /* Adjusted hover position */
+    }
+
+    .fancy-button:hover::after {
+        transform: translateX(0.5em);
+        /* Adjusted hover position */
+    }
+}

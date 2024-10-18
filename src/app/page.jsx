@@ -5,6 +5,7 @@ import MagneticTextUse from '@/components/MagneticTextUse'
 import { CardExample } from '@/components/CardExample'
 import Scroller from '@/components/Scroller'
 import { ExtraFeatures } from '@/components/template/ExtraFeatures'
+import Resume from '@/components/Resume'
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <SpotLightUse />
 
       </Card>
+
+      <Resume />
 
       <Scroller />
       {/* <ExtraFeatures /> */}
