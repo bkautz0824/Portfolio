@@ -88,12 +88,12 @@ const items = [
   
   export default function Marquee() {
     return (
-      <div className="relative flex items-center mt-10 mb-4 w-ful">
+      <div className="relative flex items-center w-full mt-10 mb-4">
         <div className="relative flex max-w-[100vw] overflow-hidden py-5">
           <div className="flex w-max animate-marquee [--duration:80s] hover:[animation-play-state:paused]">
             {[...items, ...items].map((item, index) => (
               <div key={index} className="h-full px-2.5">
-                <div className="relative h-full w-[28rem] rounded-2xl border border-white/5 bg-white/5 px-8 py-6">
+                <div className="relative h-full w-[28rem] rounded-2xl border border-white/5 bg-slate-900 px-8 py-6">
                   <div className="pb-4 font-light text-white/75">{item.body}</div>
   
                   <div className="flex items-center gap-4 mt-auto">

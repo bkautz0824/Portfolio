@@ -33,7 +33,7 @@ export default function Scroller() {
               </h1>
   
             
-              <div className="flex justify-center mt-6 transition-[transform,opacity] duration-[--duration] md:mt-12 w-3/5 items-center">
+              <div className="flex justify-center mt-6 transition-[transform,opacity] duration-[--duration] md:mt-12 w-3/5 items-center ">
                 <div className="flex flex-wrap justify-center w-full gap-x-20 gap-y-8 md:gap-y-8">
                   {items.map((Item, index) => (
                     <div
