@@ -45,7 +45,10 @@ function PortfolioFrame({
                 {project.image.startsWith('/images/placeholder-') ? (
                   <div className={`w-full h-full flex items-center justify-center text-white font-bold text-lg ${
                     project.id === 4 ? 'bg-gradient-to-br from-teal-500 to-teal-700' : 
-                    'bg-gradient-to-br from-blue-600 to-blue-800'
+                    project.id === 5 ? 'bg-gradient-to-br from-blue-600 to-blue-800' :
+                    project.id === 6 ? 'bg-gradient-to-br from-purple-600 to-purple-800' :
+                    project.id === 7 ? 'bg-gradient-to-br from-orange-600 to-orange-800' :
+                    'bg-gradient-to-br from-gray-600 to-gray-800'
                   }`}>
                     {project.title}
                   </div>
@@ -106,6 +109,7 @@ export default function DynamicPortfolioGrid({
   const getGridDimensions = (count) => {
     if (count <= 4) return { rows: 2, cols: 2 }
     if (count <= 6) return { rows: 2, cols: 3 }
+    if (count <= 8) return { rows: 2, cols: 4 }
     if (count <= 9) return { rows: 3, cols: 3 }
     return { rows: 3, cols: 4 }
   }
@@ -142,7 +146,7 @@ export default function DynamicPortfolioGrid({
 
   return (
     <div
-      className="relative w-full h-[600px]"
+      className="relative w-full h-[700px]"
       style={{
         display: "grid",
         gridTemplateRows: getRowSizes(),

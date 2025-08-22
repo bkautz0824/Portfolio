@@ -44,6 +44,30 @@ export default function Scroller() {
         image: "/images/placeholder-nba-world.png",
         link: "#",
         technologies: ["React", "Sports APIs", "D3.js", "Express.js"]
+      },
+      {
+        id: 6,
+        title: "iBrainGlobal Landing",
+        description: "Modern landing page for iBrainGlobal showcasing AI-powered business solutions. Clean design with interactive elements and responsive layouts for optimal user engagement.",
+        image: "/images/placeholder-ibrain.png",
+        link: "#",
+        technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]
+      },
+      {
+        id: 7,
+        title: "Knicks Tape",
+        description: "New York Knicks blog featuring game analysis, player stats, trade rumors, and fan discussions. Built for the passionate Knicks community with real-time updates.",
+        image: "/images/placeholder-knicks.png",
+        link: "#",
+        technologies: ["React", "Node.js", "MongoDB", "Sports APIs"]
+      },
+      {
+        id: 8,
+        title: "Next Project",
+        description: "Coming soon... Exciting new project currently under construction. Stay tuned for innovative features and cutting-edge technology implementations.",
+        image: "/images/placeholder-construction.png",
+        link: "#",
+        technologies: ["TBD", "Modern Stack", "Innovation"]
       }
     ];
     
@@ -56,12 +80,12 @@ export default function Scroller() {
               My Work
             </h1>
 
-            <div className="flex justify-center mt-6 md:mt-12 w-4/5 items-center">
-              <div className="w-full">
+            <div className="flex justify-center mt-6 md:mt-12 w-full items-center px-4">
+              <div className="w-full max-w-7xl">
                 <DynamicPortfolioGrid 
                   projects={projects}
                   hoverSize={7}
-                  gapSize={6}
+                  gapSize={8}
                   showFrames={true}
                 />
               </div>
