@@ -42,30 +42,18 @@ function PortfolioFrame({
           >
             <Link href={project.link} target="_blank" passHref>
               <div className="relative w-full h-full group cursor-pointer">
-                {project.image.startsWith('/images/placeholder-') ? (
-                  <div className={`w-full h-full flex items-center justify-center text-white font-bold text-lg ${
-                    project.id === 4 ? 'bg-gradient-to-br from-teal-500 to-teal-700' : 
-                    project.id === 5 ? 'bg-gradient-to-br from-blue-600 to-blue-800' :
-                    project.id === 6 ? 'bg-gradient-to-br from-purple-600 to-purple-800' :
-                    project.id === 7 ? 'bg-gradient-to-br from-orange-600 to-orange-800' :
-                    'bg-gradient-to-br from-gray-600 to-gray-800'
-                  }`}>
-                    {project.title}
-                  </div>
-                ) : (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-all duration-300 group-hover:brightness-110"
-                  />
-                )}
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-all duration-300 group-hover:brightness-110"
+                />
                 
                 {/* Overlay with project info */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-sm text-center mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
                     {project.technologies?.map((tech, index) => (
                       <span key={index} className="bg-white/20 px-2 py-1 rounded text-xs">
                         {tech}
