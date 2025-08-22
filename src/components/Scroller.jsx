@@ -72,25 +72,18 @@ export default function Scroller() {
     ];
     
     return (
-      <div className="flex w-full m-6 h-full/2" id="Projects">
-        <div className="max-w-full mx-auto">
-          <div className="flex flex-col items-center justify-between w-full">
+      <div className="w-full min-h-screen flex flex-col items-center py-8" id="Projects">
+        <h1 className="text-dark text-center font-display text-xl font-medium md:text-3xl mb-8">
+          My Work
+        </h1>
 
-            <h1 className="text-dark mt-6 text-center font-display text-xl font-medium md:text-3xl">
-              My Work
-            </h1>
-
-            <div className="flex justify-center mt-6 md:mt-12 w-full items-center px-4">
-              <div className="w-full max-w-7xl">
-                <DynamicPortfolioGrid 
-                  projects={projects}
-                  hoverSize={7}
-                  gapSize={8}
-                  showFrames={true}
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-full px-4">
+          <DynamicPortfolioGrid 
+            projects={projects}
+            hoverSize={7}
+            gapSize={8}
+            showFrames={true}
+          />
         </div>
       </div>
     );

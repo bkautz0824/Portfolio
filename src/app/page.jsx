@@ -9,15 +9,14 @@ import Resume from '@/components/Resume'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col">
+      <div className="flex flex-col items-center">
+        <Card className='w-4/5 p-4 mt-14 h-screen/4 '>
+          <SpotLightUse />
+        </Card>
 
-       
-      <Card className='w-4/5 p-4 mt-14 h-screen/4 '>
-        <SpotLightUse />
-
-      </Card>
-
-      <Resume />
+        <Resume />
+      </div>
 
       <Scroller />
       {/* <ExtraFeatures /> */}
