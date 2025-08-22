@@ -5,7 +5,7 @@ import useIsMobile from '@/cutoms-hooks/useIsMobile';
 import '../app/styles.css';
 
 const Resume = () => {
-    const [showResume, setShowResume] = useState(false);
+    const [showResume, setShowResume] = useState(true);
     const isMobile = useIsMobile();
 
     const handleToggleResume = () => {
