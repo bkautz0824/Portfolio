@@ -1,7 +1,5 @@
 "use client"
 import * as React from "react"
-import clsx from "clsx"
-import {ScrollReveal}  from "@/components/ui/ScrollReveal"
 import DynamicPortfolioGrid from "./DynamicPortfolioFrames"
 
 export default function Scroller() {
@@ -35,7 +33,7 @@ export default function Scroller() {
         id: 4,
         title: "AI Calendar Assistant",
         description: "Smart calendar management powered by AI. Automatically schedules meetings, suggests optimal time slots, and integrates with popular calendar applications for seamless productivity.",
-        image: "https://via.placeholder.com/500x300/0d9488/ffffff?text=AI+Calendar+Assistant",
+        image: "/images/placeholder-ai-calendar.png",
         link: "#",
         technologies: ["React", "AI/ML", "Calendar APIs", "Node.js"]
       },
@@ -43,7 +41,7 @@ export default function Scroller() {
         id: 5,
         title: "NBA World",
         description: "Complete NBA statistics and analytics platform. Real-time scores, player stats, team comparisons, and predictive analytics for basketball enthusiasts and fantasy players.",
-        image: "https://via.placeholder.com/500x300/1e40af/ffffff?text=NBA+World",
+        image: "/images/placeholder-nba-world.png",
         link: "#",
         technologies: ["React", "Sports APIs", "D3.js", "Express.js"]
       }
@@ -51,38 +49,25 @@ export default function Scroller() {
     
     return (
       <div className="flex w-full m-6 h-full/2" id="Projects">
-        <ScrollReveal offset={200} trigger="middle" className="max-w-full mx-auto [--duration:500ms] ">
-          {(isActive) => (
-            <div className="flex flex-col items-center justify-between w-full">
-  
-              <h1
-                className={clsx(
-                  { "translate-y-8 opacity-0": !isActive },
-                  "text-dark mt-6 text-center font-display text-xl font-medium transition-[transform,opacity] md:text-3xl",
-                )}
-              >
-                My Work
-              </h1>
-  
-            
-              <div className="flex justify-center mt-6 transition-[transform,opacity] duration-[--duration] md:mt-12 w-4/5 items-center">
-                <div 
-                  className={clsx(
-                    "w-full transition-all duration-[--duration]",
-                    !isActive ? "translate-y-8 opacity-0" : "",
-                  )}
-                >
-                  <DynamicPortfolioGrid 
-                    projects={projects}
-                    hoverSize={7}
-                    gapSize={6}
-                    showFrames={true}
-                  />
-                </div>
+        <div className="max-w-full mx-auto">
+          <div className="flex flex-col items-center justify-between w-full">
+
+            <h1 className="text-dark mt-6 text-center font-display text-xl font-medium md:text-3xl">
+              My Work
+            </h1>
+
+            <div className="flex justify-center mt-6 md:mt-12 w-4/5 items-center">
+              <div className="w-full">
+                <DynamicPortfolioGrid 
+                  projects={projects}
+                  hoverSize={7}
+                  gapSize={6}
+                  showFrames={true}
+                />
               </div>
             </div>
-          )}
-        </ScrollReveal>
+          </div>
+        </div>
       </div>
     );
   }

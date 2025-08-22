@@ -42,12 +42,21 @@ function PortfolioFrame({
           >
             <Link href={project.link} target="_blank" passHref>
               <div className="relative w-full h-full group cursor-pointer">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-all duration-300 group-hover:brightness-110"
-                />
+                {project.image.startsWith('/images/placeholder-') ? (
+                  <div className={`w-full h-full flex items-center justify-center text-white font-bold text-lg ${
+                    project.id === 4 ? 'bg-gradient-to-br from-teal-500 to-teal-700' : 
+                    'bg-gradient-to-br from-blue-600 to-blue-800'
+                  }`}>
+                    {project.title}
+                  </div>
+                ) : (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-all duration-300 group-hover:brightness-110"
+                  />
+                )}
                 
                 {/* Overlay with project info */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
