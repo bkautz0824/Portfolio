@@ -7,19 +7,19 @@ export default function Scroller() {
     const projects = [
       {
         id: 1,
-        title: "SnapSheet Recreate",
-        description: "Recreation of a spreadsheet application with modern web technologies. Built using Claude AI artifacts for rapid prototyping and development.",
-        image: "/images/snapsheet.png",
-        link: "https://claude.ai/public/artifacts/0aa16899-f1fe-40b2-a973-bfa25f952b26",
-        technologies: ["React", "Claude AI", "JavaScript", "CSS"]
+        title: "iBRAINGlobal",
+        description: "AI-powered business solutions platform featuring intelligent automation, data analytics, and machine learning capabilities. Primary contributor to full-stack development and system architecture.",
+        image: "/images/ibrain.png",
+        link: "https://www.ibrainglobal.org/",
+        technologies: ["React", "Node.js", "AI/ML", "AWS", "MongoDB"]
       },
       {
         id: 2,
-        title: "AI Calendar Assistant",
-        description: "Smart calendar management powered by AI. Automatically schedules meetings, suggests optimal time slots, and integrates with popular calendar applications for seamless productivity.",
-        image: "/images/calendar-ai.png",
-        link: "https://v0-calendar-20lozpbbq-bkautz0824s-projects.vercel.app/auth/signin",
-        technologies: ["React", "AI/ML", "Calendar APIs", "Next.js", "Vercel"]
+        title: "Gym Guardian",
+        description: "Next.js v14 for fitness tracking, MongoDB for secure data storage, Shadcn-ui with Tailwind CSS for a sleek UI, and Next Auth Provider for seamless authentication with Google API.",
+        image: "/images/gym-guardian.png",
+        link: "https://www.gym-guardian.xyz/",
+        technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Next Auth"]
       },
       {
         id: 3,
@@ -39,35 +39,35 @@ export default function Scroller() {
       },
       {
         id: 5,
-        title: "iBRAINGlobal",
-        description: "Modern landing page for iBrainGlobal showcasing AI-powered business solutions. Clean design with interactive elements and responsive layouts for optimal user engagement.",
-        image: "/images/right-dwn-brdwy.png",
-        link: "https://www.ibrainglobal.org/",
-        technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"]
+        title: "AI Calendar Assistant",
+        description: "Smart calendar management powered by AI. Automatically schedules meetings, suggests optimal time slots, and integrates with popular calendar applications for seamless productivity.",
+        image: "/images/calendar-ai.png",
+        link: "https://v0-calendar-20lozpbbq-bkautz0824s-projects.vercel.app/auth/signin",
+        technologies: ["React", "AI/ML", "Calendar APIs", "Next.js", "Vercel"]
       },
       {
         id: 6,
-        title: "Gym Guardian",
-        description: "Next.js v14 for fitness tracking, MongoDB for secure data storage, Shadcn-ui with Tailwind CSS for a sleek UI, and Next Auth Provider for seamless authentication with Google API.",
-        image: "/images/gym-guardian.png",
-        link: "https://www.gym-guardian.xyz/",
-        technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Next Auth"]
+        title: "Living Lists",
+        description: "Dynamic task management and productivity application with real-time collaboration features. Built for teams and individuals to organize, prioritize, and track progress efficiently.",
+        image: "/images/snapsheet.png",
+        link: "https://claude.ai/public/artifacts/0aa16899-f1fe-40b2-a973-bfa25f952b26",
+        technologies: ["React", "Real-time", "Collaboration", "TypeScript"]
       },
       {
         id: 7,
-        title: "Redux Blog",
-        description: "Effortlessly create and edit blogs with our full-stack React-Redux blog builder, utilizing TypeScript, Node.js, and MongoDB for a solid foundation.",
-        image: "/images/redux-blog.png",
-        link: "https://www.bennetts-blog-builder.site/",
-        technologies: ["React", "Redux", "TypeScript", "Node.js", "MongoDB"]
-      },
-      {
-        id: 8,
         title: "IMDb Clone",
         description: "Explore movies effortlessly with this Next.js app, styled with Tailwind CSS. It taps into the IMDb API for quick access to movie details, keeping the experience simple and enjoyable.",
         image: "/images/imdb.png",
         link: "https://www.imdb-nyc.xyz/",
         technologies: ["Next.js", "Tailwind CSS", "IMDb API"]
+      },
+      {
+        id: 8,
+        title: "Redux Blog",
+        description: "Effortlessly create and edit blogs with our full-stack React-Redux blog builder, utilizing TypeScript, Node.js, and MongoDB for a solid foundation.",
+        image: "/images/redux-blog.png",
+        link: "https://www.bennetts-blog-builder.site/",
+        technologies: ["React", "Redux", "TypeScript", "Node.js", "MongoDB"]
       }
     ];
     

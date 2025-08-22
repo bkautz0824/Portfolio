@@ -50,16 +50,25 @@ function PortfolioFrame({
                 />
                 
                 {/* Overlay with project info */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-center mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    {project.technologies?.map((tech, index) => (
-                      <span key={index} className="bg-white/20 px-2 py-1 rounded text-xs">
-                        {tech}
-                      </span>
-                    ))}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Top left description box - 1/8 width */}
+                  <div className="absolute top-4 left-4 w-1/4 bg-black/85 backdrop-blur-sm rounded-lg p-3 text-white shadow-lg">
+                    <h3 className="text-sm font-bold mb-2">{project.title}</h3>
+                    <p className="text-xs leading-relaxed mb-3 line-clamp-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {project.technologies?.slice(0, 3).map((tech, index) => (
+                        <span key={index} className="bg-white/20 px-1.5 py-0.5 rounded text-xs">
+                          {tech}
+                        </span>
+                      ))}
+                      {project.technologies?.length > 3 && (
+                        <span className="text-xs text-white/70">+{project.technologies.length - 3}</span>
+                      )}
+                    </div>
                   </div>
+                  
+                  {/* Light overlay for the rest */}
+                  <div className="absolute inset-0 bg-black/20"></div>
                 </div>
               </div>
             </Link>
