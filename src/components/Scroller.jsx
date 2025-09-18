@@ -26,7 +26,7 @@ export default function Scroller() {
         title: "NBA World",
         description: "Complete NBA statistics and analytics platform. Real-time scores, player stats, team comparisons, and predictive analytics for basketball enthusiasts and fantasy players.",
         image: "/images/nba-wrld.png",
-        link: "https://v0-new-york-knicks-analysis-qihqtb20p-bkautz0824s-projects.vercel.app/",
+        link: "https://v0-new-york-knicks-analysis.vercel.app/",
         technologies: ["React", "Sports APIs", "Next.js", "Vercel"]
       },
       {
@@ -34,37 +34,37 @@ export default function Scroller() {
         title: "Knicks Analysis",
         description: "New York Knicks blog featuring game analysis, player stats, trade rumors, and fan discussions. Built for the passionate Knicks community with real-time updates.",
         image: "/images/knicks.png",
-        link: "https://v0-new-york-knicks-analysis-qihqtb20p-bkautz0824s-projects.vercel.app/knicks",
+        link: "https://v0-new-york-knicks-analysis.vercel.app/knicks",
         technologies: ["React", "Node.js", "Sports APIs", "Next.js"]
       },
       {
         id: 5,
-        title: "AI Calendar Assistant",
-        description: "Smart calendar management powered by AI. Automatically schedules meetings, suggests optimal time slots, and integrates with popular calendar applications for seamless productivity.",
-        image: "/images/calendar-ai.png",
-        link: "https://v0-calendar-20lozpbbq-bkautz0824s-projects.vercel.app/auth/signin",
-        technologies: ["React", "AI/ML", "Calendar APIs", "Next.js", "Vercel"]
+        title: "HoopMetrics",
+        description: "Advanced basketball analytics platform built with React and AI insights. Track performance, analyze wearable data, and get personalized training recommendations.",
+        image: "/images/hoopmetrics.png",
+        link: "https://hoop-king-BennettKautz.replit.app",
+        technologies: ["React", "AI/ML", "Wearable APIs", "Analytics", "Replit"]
       },
       {
         id: 6,
-        title: "Living Lists",
-        description: "Dynamic task management and productivity application with real-time collaboration features. Built for teams and individuals to organize, prioritize, and track progress efficiently.",
+        title: "Snapsheet",
+        description: "Dynamic landing page application with modern design and interactive features. Built as a demonstration of frontend capabilities and responsive design principles.",
         image: "/images/snapsheet.png",
         link: "https://claude.ai/public/artifacts/0aa16899-f1fe-40b2-a973-bfa25f952b26",
-        technologies: ["React", "Real-time", "Collaboration", "TypeScript"]
+        technologies: ["React", "Modern UI", "Responsive Design", "TypeScript"]
       },
       {
         id: 7,
-        title: "IMDb Clone",
-        description: "Explore movies effortlessly with this Next.js app, styled with Tailwind CSS. It taps into the IMDb API for quick access to movie details, keeping the experience simple and enjoyable.",
-        image: "/images/imdb.png",
-        link: "https://www.imdb-nyc.xyz/",
-        technologies: ["Next.js", "Tailwind CSS", "IMDb API"]
+        title: "Malazan Guide",
+        description: "Interactive character map and guide for the Malazan Book of the Fallen series. Explore characters, locations, and storylines with spoiler-free navigation.",
+        image: "/images/malazan.png",
+        link: "https://bridgeburners-map-guide.vercel.app/",
+        technologies: ["React", "Next.js", "Interactive Maps", "Vercel"]
       },
       {
         id: 8,
         title: "Redux Blog",
-        description: "Effortlessly create and edit blogs with our full-stack React-Redux blog builder, utilizing TypeScript, Node.js, and MongoDB for a solid foundation.",
+        description: "Effortlessly create and edit blogs with our full-stack React-Redux blog builder, utilizing TypeScript, Node.js, and MongoDB for a solid foundation. New version coming soon!",
         image: "/images/redux-blog.png",
         link: "https://www.bennetts-blog-builder.site/",
         technologies: ["React", "Redux", "TypeScript", "Node.js", "MongoDB"]
